@@ -1,0 +1,20 @@
+---
+version: "3"
+
+tasks:
+  default:
+    desc: Displays all available tasks.
+    cmds:
+      - task --list-all --sort none
+
+  environment:check:
+    desc: Check required tools are available for this environment.
+    cmds:
+      - python --version
+      - python3 --version
+      - uv --version
+
+  ruff:run:
+    desc: Run ruff linter.
+    cmds:
+      - ruff check .
