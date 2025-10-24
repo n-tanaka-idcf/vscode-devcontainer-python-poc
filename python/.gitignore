@@ -1,0 +1,6 @@
+# Gemini
+.env
+
+# Python
+.venv/
+.ruff_cache/
