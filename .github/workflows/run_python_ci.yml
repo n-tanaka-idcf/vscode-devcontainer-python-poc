@@ -32,7 +32,7 @@ jobs:
         with:
           version: 0.14.0
           src: python/
-          args: check .
+          args: check python/
 
       # 失敗時に問題のあるファイル一覧を summary に出す（Ruff は自動でアノテーションする）
       - name: Post failure summary
