@@ -46,7 +46,9 @@
                 "python.languageServer": "Pylance",
                 "python.analysis.diagnosticMode": "workspace",
                 "python.analysis.extraPaths": [],
-                // TODO: basic, standard, strictのいずれかを選ぶ
+                // typeCheckingModeは「standard」を選択しています。
+                // 理由: 本プロジェクトは型安全性を重視しつつ、strictほど厳密な型チェックは現状不要なため、標準的なバランスを取る「standard」を採用しています。
+                // 選択基準: 型安全性を最大化したい場合は「strict」、型チェックを緩くしたい場合は「basic」を選択してください。今後の要件変更時はこの基準に従って見直してください。
                 "python.analysis.typeCheckingMode": "standard",
                 "python.analysis.diagnosticSeverityOverrides": {
                     "reportMissingTypeStubs": "none"
